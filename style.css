@@ -1,0 +1,82 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: flex-end; /* Logout ကို ညာဘက်ထိသွားအောင် */
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative; /* h1 ကို absolute နေရာချနိုင်ဖို့ */
+}
+
+.navbar h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #0077b6;
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: hsl(207, 70%, 54%);
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main container */
+.dashboard {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.dashboard p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+/* Boxes container */
+.box-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Individual box */
+.box {
+    background-color: #0077b6;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 8px 24px rgba(0, 119, 182, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.box:hover {
+    background-color: #023e8a;
+    transform: translateY(-5px);
+}
